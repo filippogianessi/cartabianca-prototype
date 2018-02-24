@@ -3,16 +3,18 @@
         <link rel="stylesheet" href="./index.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <div class="nav__container">
-            <div class="nav__item"><a href="#chi-siamo">chi siamo</a></div>
-            <div class="nav__item"><a href="#dove-siamo">dove siamo</a></div>
-            <div class="nav__item"><a href="#cosa-facciamo">cosa facciamo</a></div>
-            <div class="nav__item"><a href="#nostri-servizi">i nostri servizi</a></div>
+            <div class="nav__item"><a href="#chi-siamo" class="scroll-to">chi siamo</a></div>
+            <div class="nav__item"><a href="#dove-siamo" class="scroll-to">dove siamo</a></div>
+            <div class="nav__item"><a href="#cosa-facciamo" class="scroll-to">cosa facciamo</a></div>
+            <div class="nav__item"><a href="#nostri-servizi" class="scroll-to">i nostri servizi</a></div>
+            <div class="nav__item">
+                <a href="http://cartabiancaeditore.blogspot.it/">il blog</a>
+            </div>
         </div>
-        <a href="#">
+        <a href="#" class="overlay__toggle">
             <div class="mobile-nav__container">
                 <i class="material-icons">menu</i>
                 <div class="mobile-nav__item">MENU</div>
@@ -105,5 +107,67 @@
             <div class="footer__text">Tutte le Informazioni su Tipografia Carta Bianca Carta Bianca Piccola Società Cooperativa A.r.l.</div>
         </div>
 
+
+
+
+
+        
+        <div id="overlay" class="not-active mobile-nav__overlay">
+            <div class="nav-mobile__title">MENU</div>
+            <div class="nav-mobile__title">—</div>
+            <div class="nav-mobile__item">
+                <a href="#chi-siamo" class="scroll-to">chi siamo</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="#dove-siamo" class="scroll-to">dove siamo</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="#cosa-facciamo" class="scroll-to">cosa facciamo</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="#nostri-servizi" class="scroll-to">i nostri servizi</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="http://cartabiancaeditore.blogspot.it/">il blog</a>
+            </div>
+            <a href="#">
+                <div class="close-nav__container">
+                    <i class="material-icons">close</i>
+                    <div class="mobile-nav__item">CLOSE</div>
+                </div>
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $('.scroll-to').click(function (event) {
+                    event.preventDefault();
+                    let scrollTo = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(scrollTo).offset().top
+                    }, 700, 'swing');
+                });
+            });
+        </script>
+        
+        <script>
+            $(".overlay__toggle").click(
+                function () {
+                    $('#overlay').removeClass('not-active');
+                    $('#overlay').addClass('active');
+                });
+            $(".close-nav__container").click(
+                function () {
+                    $('#overlay').removeClass('active');
+                    $('#overlay').addClass('not-active');
+                });
+                //chiusura emergenza
+            $("#overlay").click(
+                function () {
+                    $('#overlay').removeClass('active');
+                    $('#overlay').addClass('not-active');
+                });
+        </script>
     </body>
 </html>
