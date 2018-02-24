@@ -3,13 +3,14 @@
         <link rel="stylesheet" href="./index.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <div class="nav__container">
-            <div class="nav__item"><a href="#">chi siamo</a></div>
-            <div class="nav__item"><a href="#">contattaci</a></div>
-            <div class="nav__item"><a href="#">tipografia</a></div>
-            <div class="nav__item"><a href="#">editoria</a></div>
+            <div class="nav__item"><a href="#chi-siamo">chi siamo</a></div>
+            <div class="nav__item"><a href="#dove-siamo">dove siamo</a></div>
+            <div class="nav__item"><a href="#cosa-facciamo">cosa facciamo</a></div>
+            <div class="nav__item"><a href="#nostri-servizi">i nostri servizi</a></div>
         </div>
         <a href="#">
             <div class="mobile-nav__container">
@@ -18,9 +19,9 @@
             </div>
         </a>
         <div class="logo__container">
-            <img src="./src/logo.jpeg" alt="logo-cartabianca">
+            <img src="./src/logo.jpeg" alt="logo-cartabianca" id="chi-siamo" class="scroll-to">
         </div>
-        <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div class="about__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
@@ -28,14 +29,14 @@
             <i class="material-icons">arrow_downward</i>
         </div>
         <div class="index-section__container">
-            <div class="index-section__title">Dove siamo</div>
+            <div class="index-section__title" id="dove-siamo">Dove siamo</div>
             <div class="index-section__subtitle">Vienici a trovare e vieni a toccare con mano il nostro lavoro.</div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11422.101336985832!2d11.8649754!3d44.2991497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71333f03141a1dc0!2sCarta+Bianca!5e0!3m2!1sit!2sit!4v1517818737336"
                 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <div class="index-section__container">
-            <div class="index-section__title">Cosa facciamo</div>
+            <div class="index-section__title" id="cosa-facciamo">Cosa facciamo</div>
             <div class="index-section__subtitle">Una selezione delle tecniche di stampa e rilegatura che possiamo realizzare.</div>
         </div>
         <div class="index-section__items">
@@ -48,7 +49,7 @@
         </div>
 
         <div class="index-section__container">
-            <div class="index-section__title">I nostri servizi</div>
+            <div class="index-section__title" id="nostri-servizi">I nostri servizi</div>
             <div class="index-section__subtitle">Una selezione delle tecniche di stampa e rilegatura che possiamo realizzare.</div>
         </div>
         <div class="index-section__items">
