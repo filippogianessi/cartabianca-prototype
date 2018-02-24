@@ -94,6 +94,72 @@ a {
     display: none;
 }
 
+
+
+.index-section__image {
+    width: 100%;
+}
+
+.index-section__text {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 270px;
+
+}
+
+#editore__item {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/Caratteri-mobili-tipografici-tipografia.jpg);
+    background-size: cover;
+}
+
+#tipografia__item {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/Caratteri-mobili-tipografici-tipografia.jpg);
+    background-size: cover;
+}
+
+
+.contact-section__container {
+    background-color: #600B0B;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.contact__heading {
+    font-family: "PT Serif", serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin: 80px 0 56px 0;
+}
+
+.contact__paragraph {
+    font-family: "PT Serif", serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 0 20px 120px;
+}
+
+
+.footer__container {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.footer__text {
+    font-family: "PT Serif", serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin: 32px 0;
+    padding: 8px;
+}
+
+
 @media screen and (max-width: 667px) {
         .index-section__items {
             flex-direction: column;
@@ -122,67 +188,22 @@ a {
         .mobile-nav__container .material-icons {
             font-size: 32px;
             color: #600B0B;
-        }    
-}
-
-.index-section__image {
-    width: 100%;
-}
-
-.index-section__text {
-    color: white;
-    font-style: italic;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 270px;
-
-}
-
-#editore__item {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/Caratteri-mobili-tipografici-tipografia.jpg);
-    background-size: cover;
-}
-
-#tipografia__item {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/Caratteri-mobili-tipografici-tipografia.jpg);
-    background-size: cover;
-}
-
-
-.contact-section__container {
-    background-color: #600B0B;
-    margin: 0!important;
-    display: flex;
-    flex-direction: column;
-    margin-top: 120px;
-}
-.contact__heading {
-    font-family: "PT Serif", serif;
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    margin: 80px 0 56px 0;
-}
-
-.contact__paragraph {
-    font-family: "PT Serif", serif;
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin: 0 20px 120px;
-}
-
-
-.footer__container {
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__text {
-    font-family: "PT Serif", serif;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    margin: 32px 0;
+        }
+        .contact__paragraph {
+            font-family: "PT Serif", serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 0 20px 96px;
+        }
+        .contact__heading {
+            margin: 80px 0 32px 0;
+        }
+        .contact-section__container {
+            margin-top: 0;
+        }
+        .about__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
 }
